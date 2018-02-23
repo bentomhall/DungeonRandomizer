@@ -171,11 +171,11 @@
             }
         ],
         "AdventuresPerHex": 0.1,
-        "LocationTypes": [
-            "graveyards",
+        "AdventureTypes": [
+            "graveyard",
             "wilderness",
-            "ruins",
-            "camps",
+            "ruin",
+            "camp",
             "underground"
         ]
     },

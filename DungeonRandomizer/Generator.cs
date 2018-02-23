@@ -16,14 +16,22 @@ namespace DungeonRandomizer
             maxAdventures = adventures;
         }
 
-        public void Create() 
+        public int Create() 
         {
-            var selectedRegion = regions.Single(x => x.Name == region);
+            RegionData selectedRegion;
+            try {
+                selectedRegion = regions.Single(x => x.Name == region);   
+            } catch (Exception) {
+                Console.WriteLine($"Error: Input {region} matches no regions");
+                return 1;
+            }
+
             for (int i = 0; i < maxAdventures; i++)
             {
                 adventures.Add(GenerateAdventure(selectedRegion));
             }
             SerializeAdventures();
+            return 0;
         }
 
         private void SerializeAdventures()
@@ -36,7 +44,14 @@ namespace DungeonRandomizer
         {
             var adventure = new AdventureData();
             var randomType = selectedRegion.GetRandomLocationType();
-            var type = locations.First(x => x.Name == randomType);
+            LocationData type = new LocationData();
+            try {
+                type = locations.First(x => x.Name == randomType);
+            } catch (InvalidOperationException)
+            {
+                Console.WriteLine($"Location Type {randomType} not found.");
+                Environment.Exit(1);
+            }
             adventure.AdventureType = type.Name;
             adventure.Level = GetRandomLevel(selectedRegion.Tier);
             adventure.PrimaryMonster = selectedRegion.GetRandomMonster(r.NextDouble());
