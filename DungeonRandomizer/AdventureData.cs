@@ -1,13 +1,13 @@
 ﻿namespace DungeonRandomizer
 {
-    internal class AdventureData
+    public class AdventureData
     {
-        internal string AdventureType { get; set; }
-        internal int Level { get; set; }
-        internal string PrimaryMonster { get; set; }
-        internal string Scale { get; set; }
-        internal int Size { get; set; }
-        internal bool HasBoss { get; set; }
-        internal string SubType { get; set; }
+        public string AdventureType { get; set; }
+        public int Level { get; set; }
+        public string PrimaryMonster { get; set; }
+        public string Scale { get; set; }
+        public int Size { get; set; }
+        public bool HasBoss { get; set; }
+        public string SubType { get; set; }
     }
 }

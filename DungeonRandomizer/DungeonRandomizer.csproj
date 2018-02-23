@@ -8,4 +8,12 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="dungeon_data.json" />
+    <None Remove="region_data.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dungeon_data.json" />
+    <Content Include="region_data.json" />
+  </ItemGroup>
 </Project>

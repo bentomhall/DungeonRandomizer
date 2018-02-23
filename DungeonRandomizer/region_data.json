@@ -2,7 +2,7 @@
     {
         "Name": "Frozen Coast",
         "Tier": 2.5,
-        "MonsterRaces": [
+        "Monsters": [
             {"Name":"giant", "Start": 0.0, "Stop": 0.3},
             {"Name":"human", "Start": 0.3, "Stop": 0.5},
             {"Name":"beast", "Start": 0.5, "Stop": 1.0}
@@ -22,7 +22,7 @@
                 "Tech": 4
             }
         ],
-        "AdventureLocations": 0.5,
+        "AdventuresPerHex": 0.5,
         "AdventureTypes": [
             "magitech ruin",
             "wilderness",
@@ -34,7 +34,7 @@
     {
         "Name": "Orc-Lands",
         "Tier": 2.5,
-        "MonsterRaces": [
+        "Monsters": [
             {"Name":"orc", "Start": 0.0, "Stop": 0.3},
             {"Name":"undead", "Start": 0.3, "Stop": 0.35},
             {"Name":"fiend", "Start": 0.35, "Stop": 0.40},
@@ -88,7 +88,7 @@
                 "Tech": 3
             }
         ],
-        "AdventureLocations": 0.3,
+        "AdventuresPerHex": 0.3,
         "AdventureTypes": [
             "wilderness",
             "urban ruin",
@@ -101,7 +101,7 @@
     {
         "Name": "Sea of Grass",
         "Tier": 1.5,
-        "MonsterRaces": [
+        "Monsters": [
             {"Name": "beast", "Start": 0.0, "Stop": 0.6},
             {"Name": "fiend", "Start": 0.6, "Stop": 0.65},
             {"Name": "undead", "Start": 0.65, "Stop": 0.75},
@@ -170,7 +170,7 @@
                 "Tech": 4
             }
         ],
-        "AdventureLocations": 0.1,
+        "AdventuresPerHex": 0.1,
         "LocationTypes": [
             "graveyards",
             "wilderness",
@@ -181,7 +181,7 @@
     },
     {
         "Name": "Jungle of Fangs",
-        "MonsterRaces": [
+        "Monsters": [
             {"Name": "halflings", "Start": 0.0, "Stop": 0.2},
             {"Name": "beast", "Start":0.2, "Stop": 0.7},
             {"Name": "yuan-ti", "Start":0.7, "Stop": 0.85},
@@ -246,7 +246,7 @@
                 "Tech": 3
             }
         ],
-        "AdventureLocations": 0.2,
+        "AdventuresPerHex": 0.2,
         "AdventureTypes": [
             "ruin",
             "graveyard",
@@ -258,7 +258,7 @@
     {
         "Name": "Nocthian Plateau",
         "Tier": 3,
-        "MonsterRaces": [
+        "Monsters": [
             {"Name": "giant", "Start":0.0, "Stop": 0.4},
             {"Name": "monster", "Start": 0.4, "Stop": 0.8},
             {"Name": "beast", "Start": 0.8, "Stop": 1.0}
@@ -276,7 +276,7 @@
                 "Tech": 3
             }
         ],
-        "AdventureLocations": 0.5,
+        "AdventuresPerHex": 0.5,
         "AdventureTypes": [
             "magitech ruin",
             "graveyard",
@@ -290,7 +290,7 @@
     {
         "Name": "Lost Cost",
         "Tier": 2,
-        "MonsterRaces": [
+        "Monsters": [
             {"Name": "human", "Start": 0.0, "Stop": 0.2},
             {"Name": "wood elf", "Start": 0.2, "Stop": 0.4},
             {"Name": "fiend", "Start": 0.5, "Stop": 0.6},
@@ -310,7 +310,7 @@
                 "Tech": 3
             }
         ],
-        "AdventureLocations": 0.3,
+        "AdventuresPerHex": 0.3,
         "AdventureTypes": [
             "wilderness",
             "urban ruin",
@@ -323,7 +323,7 @@
     {
         "Name": "Blood-Thirst Wildlands",
         "Tier": 3,
-        "MonsterRaces": [
+        "Monsters": [
             {"Name": "monster", "Start": 0.0, "Stop": 0.5},
             {"Name": "beast", "Start": 0.5, "Stop": 0.9},
             {"Name": "goblin", "Start": 0.9, "Stop": 1.0}
@@ -331,7 +331,7 @@
         "Cities": [
 
         ],
-        "AdventureLocations": 1,
+        "AdventuresPerHex": 1,
         "AdventureTypes": [
             "wilderness",
             "camp",
@@ -340,7 +340,7 @@
     },
     {
         "Name": "Moon's Vegeance",
-        "MonsterRaces": [
+        "Monsters": [
             {"Name": "monster", "Start": 0.0, "Stop": 0.3},
             {"Name": "giant", "Start": 0.3, "Stop": 0.6},
             {"Name": "dragon", "Start": 0.6, "Stop": 0.8},
@@ -360,7 +360,7 @@
                 "Tech": 3
             }
         ],
-        "AdventureLocations": 0.6,
+        "AdventuresPerHex": 0.6,
         "AdventureTypes": [
             "wilderness",
             "lair",

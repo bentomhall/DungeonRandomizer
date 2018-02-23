@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace DungeonRandomizer
 {
@@ -34,7 +35,9 @@ namespace DungeonRandomizer
         private AdventureData GenerateAdventure(RegionData selectedRegion)
         {
             var adventure = new AdventureData();
-            var type = locations.First(x => x.Name == selectedRegion.GetRandomLocationType());
+            var randomType = selectedRegion.GetRandomLocationType();
+            var type = locations.First(x => x.Name == randomType);
+            adventure.AdventureType = type.Name;
             adventure.Level = GetRandomLevel(selectedRegion.Tier);
             adventure.PrimaryMonster = selectedRegion.GetRandomMonster(r.NextDouble());
             adventure.Scale = type.Scale;
