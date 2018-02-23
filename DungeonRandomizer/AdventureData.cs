@@ -8,5 +8,6 @@
         internal string Scale { get; set; }
         internal int Size { get; set; }
         internal bool HasBoss { get; set; }
+        internal string SubType { get; set; }
     }
 }

@@ -28,15 +28,20 @@ namespace DungeonRandomizer
         private void SerializeAdventures()
         {
             var json = JsonConvert.SerializeObject(adventures);
+            System.IO.File.WriteAllText("dungeons.json", json);
         }
 
         private AdventureData GenerateAdventure(RegionData selectedRegion)
         {
             var adventure = new AdventureData();
+            var type = locations.First(x => x.Name == selectedRegion.GetRandomLocationType());
             adventure.Level = GetRandomLevel(selectedRegion.Tier);
             adventure.PrimaryMonster = selectedRegion.GetRandomMonster(r.NextDouble());
-
-            throw new NotImplementedException();
+            adventure.Scale = type.Scale;
+            adventure.Size = type.GetSize();
+            adventure.HasBoss = type.GetBoss();
+            adventure.SubType = type.GetSubtype();
+            return adventure;
         }
 
         private int GetRandomLevel(string tier)
