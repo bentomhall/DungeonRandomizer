@@ -36,13 +36,17 @@ namespace DungeonRandomizer
 
         private void SerializeAdventures()
         {
-            var json = JsonConvert.SerializeObject(adventures);
-            System.IO.File.WriteAllText("dungeons.json", json);
+            var outputTemplate = new AdventureOutput(adventures);
+            var output = outputTemplate.TransformText();
+            System.IO.File.WriteAllText("dungeons.html", output);
         }
 
         private AdventureData GenerateAdventure(RegionData selectedRegion)
         {
-            var adventure = new AdventureData();
+            var adventure = new AdventureData
+            {
+                Region = selectedRegion.Name
+            };
             var randomType = selectedRegion.GetRandomLocationType();
             LocationData type = new LocationData();
             try {

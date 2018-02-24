@@ -1,0 +1,23 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.CodeDom" #>
+<#@ output extension=".html" #>
+<html>
+<body>
+<h1>Generated Adventures in <#= region #></h1>
+<# foreach (AdventureData d in data)
+{ #>
+	<table style="border:1px solid black">
+	<tr><td style="font-weight: bold">Level: <#= d.Level #></td></tr>
+	<tr><td> Type: <#= d.AdventureType #> </td><td>Subtype: <#= d.SubType #></td></tr>
+	<tr><td> Scale: <#= d.Scale #></td><td>Areas: <#= d.Size #></td</tr>
+	<tr><td> Main Monsters: <#= d.PrimaryMonster #></td><td>Boss Monster?: <#= d.HasBoss #></td></tr>
+	</table>
+	<br>
+<# }
+#>
+</body>
+</html>

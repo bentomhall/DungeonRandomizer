@@ -2,6 +2,7 @@
 {
     public class AdventureData
     {
+        public string Region { get; set; }
         public string AdventureType { get; set; }
         public int Level { get; set; }
         public string PrimaryMonster { get; set; }
