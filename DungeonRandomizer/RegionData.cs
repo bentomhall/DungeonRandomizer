@@ -9,7 +9,6 @@ namespace DungeonRandomizer
         public string Name { get; set; }
         public string Tier { get; set; }
         public List<NamedRange> Monsters { get; set; }
-        public List<CityData> Cities { get; set; }
         public float AdventuresPerHex { get; set; }
         public List<string> AdventureTypes { get; set; }
 

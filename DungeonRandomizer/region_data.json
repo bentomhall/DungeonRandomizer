@@ -7,21 +7,6 @@
             {"Name":"human", "Start": 0.3, "Stop": 0.5},
             {"Name":"beast", "Start": 0.5, "Stop": 1.0}
         ],
-        "Cities": [
-            {
-                "Name": "Hammerfell",
-                "Nation": "Independent",
-                "Population": 7500,
-                "Races": {
-                    "dwarves": 0.6,
-                    "gnomes": 0.8,
-                    "soul-forged": 0.9,
-                    "azer": 0.95,
-                    "deep gnomes": 1.0
-                },
-                "Tech": 4
-            }
-        ],
         "AdventuresPerHex": 0.5,
         "AdventureTypes": [
             "magitech ruin",
@@ -40,53 +25,6 @@
             {"Name":"fiend", "Start": 0.35, "Stop": 0.40},
             {"Name":"wood elf", "Start": 0.4, "Stop": 0.5},
             {"Name":"beast", "Start": 0.5, "Stop": 1.0}
-        ],
-        "Cities": [
-            {
-                "Name": "Pilvin Koti",
-                "Nation": "Independent",
-                "Population": 800,
-                "Races": {
-                    "wood elf": 0.8,
-                    "human": 0.95,
-                    "orc": 1.0
-                },
-                "Tech": 2
-            },
-            {
-                "Name": "Sin-eater's Maw",
-                "Nation": "Independent",
-                "Population": 750,
-                "Races": {
-                    "human": 0.7,
-                    "wood elf": 0.85,
-                    "halfling": 0.90,
-                    "dwarf": 1.0
-                },
-                "Tech": 2
-            },
-            {
-                "Name": "Gor'osh",
-                "Nation": "Remnant Dynasty",
-                "Population": 4000,
-                "Races": {
-                    "orc": 0.7,
-                    "dragonborn": 0.95,
-                    "goblin": 1.0
-                },
-                "Tech": 3
-            },
-            {
-                "Name": "Baile Craan",
-                "Nation": "Council",
-                "Population": 4000,
-                "Races": {
-                    "human": 0.5,
-                    "wood elf": 0.9,
-                    "dwarf": 1.0
-                },
-                "Tech": 3
-            }
         ],
         "AdventuresPerHex": 0.3,
         "AdventureTypes": [
@@ -108,68 +46,6 @@
             {"Name": "bandit", "Start": 0.75, "Stop": 0.85},
             {"Name": "cultist", "Start": 0.85, "Stop": 1.0}
         ],
-        "Cities": [
-            {
-                "Name": "Kaelthia",
-                "Nation": "Council",
-                "Population": 20000,
-                "Races": {
-                    "human": 0.4,
-                    "halfling": 0.7,
-                    "dwarf": 0.9,
-                    "high elf": 1.0
-                },
-                "Tech": 4
-            },
-            {
-                "Name": "Yuuras Zaali",
-                "Nation":"Council",
-                "Population": 2000,
-                "Races": {
-                    "human": 0.4,
-                    "halfling": 0.7,
-                    "high elf": 0.95,
-                    "goblin": 1.0
-                },
-                "Tech": 3
-            },
-            {
-                "Name": "Rauviz",
-                "Nation":"Council",
-                "Population": 10000,
-                "Races": {
-                    "human": 0.5,
-                    "halfling": 0.9,
-                    "half elf": 0.95,
-                    "dwarf": 1.0
-                },
-                "Tech": 4
-            },
-            {
-                "Name": "Fort Hope",
-                "Nation": "Windwalker Collective",
-                "Population": 3000,
-                "Races": {
-                    "goblin": 0.8,
-                    "human": 0.85,
-                    "wood elf": 0.90,
-                    "dragonborn": 0.95,
-                    "high elf": 1.0
-                },
-                "Tech": 3
-            },
-            {
-                "Name": "Byarshia",
-                "Nation":"Remnant Dynasty",
-                "Population": 5000,
-                "Races": {
-                    "goblin": 0.6,
-                    "dragonborn": 0.95,
-                    "orc": 1.0
-                },
-                "Tech": 4
-            }
-        ],
         "AdventuresPerHex": 0.1,
         "AdventureTypes": [
             "graveyard",
@@ -187,65 +63,6 @@
             {"Name": "yuan-ti", "Start":0.7, "Stop": 0.85},
             {"Name": "monster", "Start":0.85, "Stop": 1.0}
         ],
-        "Cities": [
-            {
-                "Name": "Ar Salem Dolem",
-                "Nation": "Stone Throne",
-                "Population": 2000,
-                "Races": {
-                    "human": 0.45,
-                    "half elf": 0.95,
-                    "yuan-ti": 1.0
-                },
-                "Tech": 2
-            },
-            {
-                "Name": "Srassa Saat",
-                "Nation": "Stone Throne",
-                "Population": 200,
-                "Races": {
-                    "human": 0.5,
-                    "half elf": 0.8,
-                    "yuan-ti": 0.98,
-                    "kobold": 1.0
-                },
-                "Tech": 1
-            },
-            {
-                "Name": "Sha'Slar",
-                "Nation":"Stone Throne",
-                "Population": 7000,
-                "Races":{
-                    "human": 0.4,
-                    "half elf": 0.8,
-                    "yuan-ti": 1.0
-                },
-                "Tech": 3
-            },
-            {
-                "Name": "Asa'Ka",
-                "Population": 10000,
-                "Nation":"Stone Throne",
-                "Races": {
-                    "human": 0.5,
-                    "half elf": 0.9,
-                    "yuan-ti": 1.0
-                },
-                "Tech": 4
-            },
-            {
-                "Name": "Kel'al'ar",
-                "Nation": "Stone Throne",
-                "Population": 9000,
-                "Races": {
-                    "human": 0.4,
-                    "half elf": 0.8,
-                    "dwarf": 0.85,
-                    "yuan-ti": 1.0
-                },
-                "Tech": 3
-            }
-        ],
         "AdventuresPerHex": 0.2,
         "AdventureTypes": [
             "ruin",
@@ -262,19 +79,6 @@
             {"Name": "giant", "Start":0.0, "Stop": 0.4},
             {"Name": "monster", "Start": 0.4, "Stop": 0.8},
             {"Name": "beast", "Start": 0.8, "Stop": 1.0}
-        ],
-        "Cities": [
-            {
-                "Name": "Lyodnoir",
-                "Nation": "Remnant Dynasty",
-                "Population": 12000,
-                "Races": {
-                    "dragonborn":0.35,
-                    "goblin": 0.35,
-                    "orc": 0.3
-                },
-                "Tech": 3
-            }
         ],
         "AdventuresPerHex": 0.5,
         "AdventureTypes": [
@@ -297,19 +101,6 @@
             {"Name": "undead", "Start": 0.6, "Stop": 0.65},
             {"Name": "beast", "Start": 0.65, "Stop": 1.0}
         ],
-        "Cities": [
-            {
-                "Name": "Byss",
-                "Nation": "Byssia",
-                "Population": 7500,
-                "Races":{
-                    "human": 0.33,
-                    "half elf": 0.33,
-                    "wood elf": 0.33
-                },
-                "Tech": 3
-            }
-        ],
         "AdventuresPerHex": 0.3,
         "AdventureTypes": [
             "wilderness",
@@ -328,9 +119,6 @@
             {"Name": "beast", "Start": 0.5, "Stop": 0.9},
             {"Name": "goblin", "Start": 0.9, "Stop": 1.0}
         ],
-        "Cities": [
-
-        ],
         "AdventuresPerHex": 1,
         "AdventureTypes": [
             "wilderness",
@@ -345,20 +133,6 @@
             {"Name": "giant", "Start": 0.3, "Stop": 0.6},
             {"Name": "dragon", "Start": 0.6, "Stop": 0.8},
             {"Name": "beast", "Start": 0.8, "Stop": 1.0}
-        ],
-        "Cities": [
-            {
-                "Name": "Fuar Uulan",
-                "Nation": "Council",
-                "Population": 10000,
-                "Races": {
-                    "dwarf": 0.6,
-                    "human": 0.3,
-                    "orc": 0.05,
-                    "halfling": 0.05
-                },
-                "Tech": 3
-            }
         ],
         "AdventuresPerHex": 0.6,
         "AdventureTypes": [

@@ -12,7 +12,8 @@
             "planar",
             "corrupted",
             "arctic",
-            "forest"
+            "forest",
+            "water"
         ],
         "Ages": ["old", "recent"],
         "HasBoss": 0.0,
