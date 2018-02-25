@@ -30,15 +30,16 @@ namespace DungeonRandomizer
             {
                 adventures.Add(GenerateAdventure(selectedRegion));
             }
-            SerializeAdventures();
+            SerializeAdventures(selectedRegion.Name);
             return 0;
         }
 
-        private void SerializeAdventures()
+        private void SerializeAdventures(string region)
         {
             var outputTemplate = new AdventureOutput(adventures);
             var output = outputTemplate.TransformText();
-            System.IO.File.WriteAllText("dungeons.html", output);
+            var filename = "dungeons_in_" + region + System.IO.Path.GetRandomFileName()+".html";
+            System.IO.File.WriteAllText(filename, output);
         }
 
         private AdventureData GenerateAdventure(RegionData selectedRegion)

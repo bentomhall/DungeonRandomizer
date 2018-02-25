@@ -6,25 +6,38 @@ namespace DungeonRandomizer
     {
         static int Main(string[] args)
         {
-            
-            if (args.Length != 3) {
-                Console.WriteLine("Please give the file name for the region data file.");
-                Console.WriteLine("Please supply the name of a region.");
-                Console.WriteLine("Please specify the number of locations to generate.");
-                return 1;
-            }
-            var filename = args[0];
-            var region = args[1];
-            var success = int.TryParse(args[2], out int adventures);
-            if (!success || adventures < 1) 
-            {
-                Console.WriteLine("Last parameter is not an integer; must specify at least one adventure");
-                return 1;
-            }
+            var f = GetDataFile();
+            var filename = f != "" ? f : "region_data.json";
+            var region = GetRegionName();
+            var adventures = GetNumber();
             var generator = new Generator(filename, region, adventures);
             var status = generator.Create();
             return status;
         }
 
+        static string GetDataFile()
+        {
+            Console.Write("Filename (.json) that contains the region data: ");
+            return Console.ReadLine();
+        }
+
+        static string GetRegionName()
+        {
+            Console.Write("Region to generate locations for: ");
+            return Console.ReadLine();
+        }
+
+        static int GetNumber()
+        {
+            Console.Write("Number of adventures to generate: ");
+            var input = Console.ReadLine();
+            if (int.TryParse(input, out int result))
+            {
+                return result;
+            } else
+            {
+                return 1;
+            }
+        }
     }
 }
