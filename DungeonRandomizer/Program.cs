@@ -12,7 +12,15 @@ namespace DungeonRandomizer
             var adventures = GetNumber();
             var generator = new Generator(filename, region, adventures);
             var status = generator.Create();
+            InsertPause();
             return status;
+        }
+
+        static void InsertPause()
+        {
+            Console.Write("Press Any Key to Continue...");
+            Console.ReadLine();
+            return;
         }
 
         static string GetDataFile()
