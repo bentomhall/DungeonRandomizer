@@ -53,7 +53,7 @@
 	<table>
 	<tr><td><b>Level: <#= d.Level #></b></td><td class="empty"></td></tr>
 	<tr><td> Type: <#= d.AdventureType #> </td><td>Subtype: <#= d.SubType #></td></tr>
-	<tr><td> Scale: <#= d.Scale #></td><td>Areas: <#= d.Size #></td</tr>
+	<tr><td> Scale: <#= d.Scale #></td><td>Areas: <#= d.Size #></td></tr>
 	<tr><td> Main Monsters: <#= d.PrimaryMonster #></td><td>Boss Monster?: <#= d.HasBoss #></td></tr>
 	</table>
 <# }

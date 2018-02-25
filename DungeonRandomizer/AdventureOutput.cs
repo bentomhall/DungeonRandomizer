@@ -121,7 +121,7 @@ namespace DungeonRandomizer
             
             #line default
             #line hidden
-            this.Write("</td</tr>\r\n\t<tr><td> Main Monsters: ");
+            this.Write("</td></tr>\r\n\t<tr><td> Main Monsters: ");
             
             #line 57 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.PrimaryMonster));
