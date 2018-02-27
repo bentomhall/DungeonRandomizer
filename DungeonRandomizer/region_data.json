@@ -78,7 +78,17 @@
         "Monsters": [
             {"Name": "giant", "Start":0.0, "Stop": 0.4},
             {"Name": "monster", "Start": 0.4, "Stop": 0.8},
-            {"Name": "beast", "Start": 0.8, "Stop": 1.0}
+          {
+            "Name": "beast",
+            "Start": 0.8,
+            "Stop": 0.9
+          },
+          {
+            "Name": "dragon",
+            "Start": 0.9,
+            "Stop":  1.0
+          }
+          
         ],
         "AdventuresPerHex": 0.5,
         "AdventureTypes": [
@@ -92,14 +102,14 @@
         ]
     },
     {
-        "Name": "Lost Cost",
+        "Name": "Lost Coast",
         "Tier": 2,
         "Monsters": [
             {"Name": "human", "Start": 0.0, "Stop": 0.2},
             {"Name": "wood elf", "Start": 0.2, "Stop": 0.4},
-            {"Name": "fiend", "Start": 0.5, "Stop": 0.6},
-            {"Name": "undead", "Start": 0.6, "Stop": 0.65},
-            {"Name": "beast", "Start": 0.65, "Stop": 1.0}
+            {"Name": "fiend", "Start": 0.4, "Stop": 0.5},
+            {"Name": "undead", "Start": 0.5, "Stop": 0.55},
+            {"Name": "beast", "Start": 0.55, "Stop": 1.0}
         ],
         "AdventuresPerHex": 0.3,
         "AdventureTypes": [

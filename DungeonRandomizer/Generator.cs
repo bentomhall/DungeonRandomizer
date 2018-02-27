@@ -8,15 +8,13 @@ namespace DungeonRandomizer
 {
     public class Generator
     {
-        public Generator(string filename, string region, int adventures)
+        public Generator(IEnumerable<RegionData> regions)
         {
-            regions = ConfigurationLoader.ParseRegions(filename).ToList();
+            this.regions = regions.ToList();
             locations = ConfigurationLoader.ParseLocations("dungeon_data.json").ToList();
-            this.region = region;
-            maxAdventures = adventures;
         }
 
-        public int Create() 
+        public int Create(string region, int maxNumber) 
         {
             RegionData selectedRegion;
             try {
@@ -26,7 +24,7 @@ namespace DungeonRandomizer
                 return 1;
             }
 
-            for (int i = 0; i < maxAdventures; i++)
+            for (int i = 0; i < maxNumber; i++)
             {
                 adventures.Add(GenerateAdventure(selectedRegion));
             }
@@ -80,8 +78,6 @@ namespace DungeonRandomizer
         }
 
         private List<RegionData> regions = new List<RegionData>();
-        private string region;
-        private int maxAdventures;
         private List<AdventureData> adventures = new List<AdventureData>();
         private List<LocationData> locations = new List<LocationData>();
         private Dictionary<string, List<int>> tierMap = new Dictionary<string, List<int>>()

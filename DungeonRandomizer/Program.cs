@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DungeonRandomizer
 {
@@ -6,12 +8,14 @@ namespace DungeonRandomizer
     {
         static int Main(string[] args)
         {
-            var f = GetDataFile();
-            var filename = f != "" ? f : "region_data.json";
-            var region = GetRegionName();
+            var filename = "region_data.json";
+            var regionData = ConfigurationLoader.ParseRegions(filename);
+            var region = GetRegionName(regionData);
             var adventures = GetNumber();
-            var generator = new Generator(filename, region, adventures);
-            var status = generator.Create();
+            var generator = new Generator(regionData);
+            InsertLine();
+            Console.WriteLine($"Now generating {adventures} adventure locations for region: {region}");
+            var status = generator.Create(region, adventures);
             InsertPause();
             return status;
         }
@@ -23,14 +27,14 @@ namespace DungeonRandomizer
             return;
         }
 
-        static string GetDataFile()
-        {
-            Console.Write("Filename (.json) that contains the region data: ");
-            return Console.ReadLine();
-        }
+        static void InsertLine() => Console.WriteLine(new string('-', 30));
 
-        static string GetRegionName()
+        static string GetRegionName(IEnumerable<RegionData> regions)
         {
+            var validRegions = regions.Select(x => x.Name);
+            Console.WriteLine("Valid regions are:");
+            Console.WriteLine(String.Join(Environment.NewLine, validRegions));
+            InsertLine();
             Console.Write("Region to generate locations for: ");
             return Console.ReadLine();
         }

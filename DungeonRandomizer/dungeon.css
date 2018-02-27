@@ -1,0 +1,43 @@
+﻿body {
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    margin-left: 10%;
+}
+
+.dungeon, h1 {
+    background-color: white;
+    padding: 4px;
+}
+
+.dungeon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+}
+
+h1 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.row {
+    border-bottom: 1px solid black;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2;
+}
+
+.span {
+    grid-column: span 2;
+}

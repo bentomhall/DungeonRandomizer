@@ -48,5 +48,8 @@
       <LastGenOutput>AdventureOutput.cs</LastGenOutput>
       <CustomToolNamespace>DungeonRandomizer</CustomToolNamespace>
     </None>
+    <None Update="dungeon.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
