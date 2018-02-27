@@ -13,6 +13,7 @@
   <ItemGroup>
     <None Remove="dungeon_data.json" />
     <None Remove="region_data.json" />
+    <None Remove="dungeons.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="dungeon_data.json">
