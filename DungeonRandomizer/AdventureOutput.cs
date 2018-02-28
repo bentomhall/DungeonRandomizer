@@ -29,18 +29,67 @@ namespace DungeonRandomizer
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("<html>\r\n<head>\r\n\t<title>Random Adventure Locations</title>\r\n\t<link href=\"dungeon." +
-                    "css\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<div class=\"container\">\r\n<h1>Generated " +
-                    "Adventures in ");
+            this.Write(@"<html>
+<head>
+	<title>Random Adventure Locations</title>
+	<style>
+	body {
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    margin-left: 10%;
+}
+
+.dungeon, h1 {
+    background-color: white;
+    padding: 4px;
+}
+
+.dungeon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+}
+
+h1 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.row {
+    border-bottom: 1px solid black;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2;
+}
+
+.span {
+    grid-column: span 2;
+}
+	</style>
+</head>
+<body>
+<div class=""container"">
+<h1>Generated Adventures in ");
             
-            #line 15 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 59 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(region));
             
             #line default
             #line hidden
             this.Write("</h1>\r\n");
             
-            #line 16 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 60 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
  foreach (AdventureData d in data)
 { 
             
@@ -48,56 +97,56 @@ namespace DungeonRandomizer
             #line hidden
             this.Write("\t<div class=\"dungeon\">\r\n\t\t<div class=\"row span\"><b>Level: ");
             
-            #line 19 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 63 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.Level));
             
             #line default
             #line hidden
             this.Write("</b></div>\r\n\t\t<div class=\"row left\"> Type: ");
             
-            #line 20 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 64 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.AdventureType));
             
             #line default
             #line hidden
             this.Write(" </div>\r\n\t\t<div class=\"row right\">Subtype: ");
             
-            #line 21 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 65 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.SubType));
             
             #line default
             #line hidden
             this.Write("</div>\r\n\t\t<div class=\"row left\"> Scale: ");
             
-            #line 22 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 66 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.Scale));
             
             #line default
             #line hidden
             this.Write("</div>\r\n\t\t<div class=\"row right\">Areas: ");
             
-            #line 23 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 67 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.Size));
             
             #line default
             #line hidden
             this.Write("</div>\r\n\t\t<div class=\"left\"> Main Monsters: ");
             
-            #line 24 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 68 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.PrimaryMonster));
             
             #line default
             #line hidden
             this.Write("</div>\r\n\t\t<div class=\"right\">Boss Monster?: ");
             
-            #line 25 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 69 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(d.HasBoss));
             
             #line default
             #line hidden
             this.Write("</div>\r\n\t</div>\r\n");
             
-            #line 27 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
+            #line 71 "C:\Users\bhall\Documents\GitHub\DungeonRandomizer\DungeonRandomizer\DungeonRandomizer\AdventureOutput.tt"
  }
 
             

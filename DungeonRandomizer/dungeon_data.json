@@ -13,7 +13,11 @@
             "corrupted",
             "arctic",
             "forest",
-            "water"
+          "water",
+          "desert",
+          "plains",
+          "hills",
+          "swamp"
         ],
         "Ages": ["old", "recent"],
         "HasBoss": 0.0,
@@ -35,7 +39,9 @@
             "shrine",
             "estate",
             "arcane",
-            "vault"
+          "vault",
+          "farmstead",
+          "vehicle"
         ],
         "Ages": ["ancient", "old", "recent"],
         "HasBoss": 0.2,
@@ -76,7 +82,8 @@
             "industrial",
             "religious",
             "military",
-            "arcane"
+          "arcane",
+          "outcast"
         ],
         "Ages": ["ancient", "old"],
         "HasBoss": 0.5,
@@ -94,8 +101,10 @@
         "Subtypes": [
             "battlefield",
             "mass grave",
-            "high rank",
-            "catacomb"
+            "fancy",
+          "catacomb",
+          "simple",
+          "overgrown"
         ],
         "Ages": ["ancient", "old", "recent"],
         "HasBoss": 0.3,
@@ -112,10 +121,13 @@
         "Sizes": [1, 2],
         "Subtypes": [
             "bandit",
-            "orc",
-            "giant",
-            "wood elf",
-            "traveller"
+            "tribal",
+            "permanent",
+          "traveller",
+          "military",
+          "merchant",
+          "noble",
+          "outcast"
         ],
         "Ages": ["recent"],
         "HasBoss": 0.9,
@@ -135,7 +147,8 @@
             "vault",
             "cave",
             "hideout",
-            "shrine"
+          "shrine",
+          "volcanic"
         ],
         "Ages": ["ancient", "old", "recent"],
         "HasBoss": 0.7,
@@ -154,7 +167,10 @@
             "dragon",
             "beast",
             "fiend",
-            "undead"
+          "undead",
+          "giant",
+          "aberration",
+          "humanoid"
         ],
         "Ages": ["ancient", "old", "recent"],
         "HasBoss": 1,
