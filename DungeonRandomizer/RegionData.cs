@@ -8,13 +8,19 @@ namespace DungeonRandomizer
     {
         public string Name { get; set; }
         public string Tier { get; set; }
-        public List<NamedRange> Monsters { get; set; }
+        public Dictionary<string, double> Monsters { get; set; }
         public float AdventuresPerHex { get; set; }
         public List<string> AdventureTypes { get; set; }
 
+        private WeightedChoiceSet monsters;
+
         public string GetRandomMonster(double r)
         {
-            return Monsters.First(x => x.Matches(r)).Name;
+            if (monsters == null)
+            {
+                monsters = new WeightedChoiceSet(Monsters);
+            }
+            return monsters.Match(r);
         }
 
         public string GetRandomLocationType()

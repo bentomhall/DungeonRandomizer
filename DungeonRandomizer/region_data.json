@@ -2,11 +2,11 @@
     {
         "Name": "Frozen Coast",
         "Tier": 2.5,
-        "Monsters": [
-            {"Name":"giant", "Start": 0.0, "Stop": 0.3},
-            {"Name":"human", "Start": 0.3, "Stop": 0.5},
-            {"Name":"beast", "Start": 0.5, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "giant": 0.3,
+        "human": 0.2,
+        "beast": 0.5
+      } ,
         "AdventuresPerHex": 0.5,
         "AdventureTypes": [
             "magitech ruin",
@@ -19,13 +19,13 @@
     {
         "Name": "Orc-Lands",
         "Tier": 2.5,
-        "Monsters": [
-            {"Name":"orc", "Start": 0.0, "Stop": 0.3},
-            {"Name":"undead", "Start": 0.3, "Stop": 0.35},
-            {"Name":"fiend", "Start": 0.35, "Stop": 0.40},
-            {"Name":"wood elf", "Start": 0.4, "Stop": 0.5},
-            {"Name":"beast", "Start": 0.5, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "orc": 0.3,
+        "undead": 0.05,
+        "fiend": 0.05,
+        "wood elf": 0.1,
+        "beast": 0.5
+      },
         "AdventuresPerHex": 0.3,
         "AdventureTypes": [
             "wilderness",
@@ -39,13 +39,13 @@
     {
         "Name": "Sea of Grass",
         "Tier": 1.5,
-        "Monsters": [
-            {"Name": "beast", "Start": 0.0, "Stop": 0.6},
-            {"Name": "fiend", "Start": 0.6, "Stop": 0.65},
-            {"Name": "undead", "Start": 0.65, "Stop": 0.75},
-            {"Name": "bandit", "Start": 0.75, "Stop": 0.85},
-            {"Name": "cultist", "Start": 0.85, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "beast": 0.6,
+        "fiend": 0.05,
+        "undead": 0.1,
+        "bandit": 0.1,
+        "cultist":  0.15
+      },
         "AdventuresPerHex": 0.1,
         "AdventureTypes": [
             "graveyard",
@@ -57,12 +57,12 @@
     },
     {
         "Name": "Jungle of Fangs",
-        "Monsters": [
-            {"Name": "halflings", "Start": 0.0, "Stop": 0.2},
-            {"Name": "beast", "Start":0.2, "Stop": 0.7},
-            {"Name": "yuan-ti", "Start":0.7, "Stop": 0.85},
-            {"Name": "monster", "Start":0.85, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "halfling": 0.2,
+        "beast": 0.5,
+        "yuan-ti": 0.15,
+        "monster": 0.15
+      },
         "AdventuresPerHex": 0.2,
         "AdventureTypes": [
             "ruin",
@@ -75,21 +75,12 @@
     {
         "Name": "Nocthian Plateau",
         "Tier": 3,
-        "Monsters": [
-            {"Name": "giant", "Start":0.0, "Stop": 0.4},
-            {"Name": "monster", "Start": 0.4, "Stop": 0.8},
-          {
-            "Name": "beast",
-            "Start": 0.8,
-            "Stop": 0.9
-          },
-          {
-            "Name": "dragon",
-            "Start": 0.9,
-            "Stop":  1.0
-          }
-          
-        ],
+      "Monsters": {
+        "giant": 0.4,
+        "monster": 0.4,
+        "beast": 0.1,
+        "dragon": 0.1
+      },
         "AdventuresPerHex": 0.5,
         "AdventureTypes": [
             "magitech ruin",
@@ -104,13 +95,13 @@
     {
         "Name": "Lost Coast",
         "Tier": 2,
-        "Monsters": [
-            {"Name": "human", "Start": 0.0, "Stop": 0.2},
-            {"Name": "wood elf", "Start": 0.2, "Stop": 0.4},
-            {"Name": "fiend", "Start": 0.4, "Stop": 0.5},
-            {"Name": "undead", "Start": 0.5, "Stop": 0.55},
-            {"Name": "beast", "Start": 0.55, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "human": 0.2,
+        "wood elf": 0.2,
+        "fiend": 0.1,
+        "undead": 0.05,
+        "beast": 0.45
+      },
         "AdventuresPerHex": 0.3,
         "AdventureTypes": [
             "wilderness",
@@ -124,11 +115,11 @@
     {
         "Name": "Blood-Thirst Wildlands",
         "Tier": 3,
-        "Monsters": [
-            {"Name": "monster", "Start": 0.0, "Stop": 0.5},
-            {"Name": "beast", "Start": 0.5, "Stop": 0.9},
-            {"Name": "goblin", "Start": 0.9, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "monster": 0.5,
+        "beast": 0.4,
+        "goblin": 0.1
+      },
         "AdventuresPerHex": 1,
         "AdventureTypes": [
             "wilderness",
@@ -138,12 +129,12 @@
     },
     {
         "Name": "Moon's Vegeance",
-        "Monsters": [
-            {"Name": "monster", "Start": 0.0, "Stop": 0.3},
-            {"Name": "giant", "Start": 0.3, "Stop": 0.6},
-            {"Name": "dragon", "Start": 0.6, "Stop": 0.8},
-            {"Name": "beast", "Start": 0.8, "Stop": 1.0}
-        ],
+      "Monsters": {
+        "monster": 0.3,
+        "giant": 0.3,
+        "dragon": 0.2,
+        "beast": 0.2
+      },
         "AdventuresPerHex": 0.6,
         "AdventureTypes": [
             "wilderness",
