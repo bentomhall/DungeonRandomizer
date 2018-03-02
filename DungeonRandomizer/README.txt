@@ -38,15 +38,8 @@ Format:
                        // "3": 11-16
                        // "3.5": 14-18
                        // "4": 17-20
-        "Monsters": [NamedRange] // see NamedRange; this has the main hostile groups that are the "owners" of the adventuring sites
+        "Monsters": {string: float} // the string is a type of creature, the float is a probability (should sum to 1). This has the main hostile groups that are the "owners" of the adventuring sites
         "AdventuresPerHex": float //currently unused, how many sites are expected per macrohex (~30 miles across)
         "AdventureTypes": [string] //these must match values found in dungeon_data.json *exactly*
     }
 ]
-
-NamedRange: Represents a range of random results (like a percentile table row)
-{
-    "Name": string //the row name
-    "Start": 0.0 <= float < "Stop"
-    "Stop": "Start" < float <= 1.0 //Stop - Start = probabilty of occurence.
-}
